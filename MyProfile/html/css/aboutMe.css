@@ -1,0 +1,33 @@
+body>:nth-child(1)>div>:nth-child(2)>h1{
+    font-size: 2vw;
+    color: #0353a4;
+    margin: 0;
+    padding: 3%;
+    width: max-content;
+    position: relative;
+    top: 2%;
+    left: 7%;
+}
+
+body>:nth-child(1)>div>:nth-child(2)>h2{
+    font-size: 1vw;
+    color: #0353a4;
+    margin: 0;
+    padding: 1%;
+    width: max-content;
+    position: relative;
+    top: 4%;
+    left: 17%;
+}
+
+body>:nth-child(1)>div>:nth-child(2)>pre{
+    font-family: 'Lucida Console', monospace;
+    font-size: 1.1vw;
+    color: #014f86;
+    margin: 0;
+    padding: 1.2%;
+    width: max-content;
+    position: relative;
+    left: 3%;
+    top: 11%;
+}

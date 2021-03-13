@@ -1,0 +1,140 @@
+.card-wrapper {
+    width: 96%;
+    height: 98%;
+    position: relative;
+    border-radius: 5%;
+    top: 1%;
+    /*background-color: #d1d9ff;*/
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 96%;
+    height: 98%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #000;
+    transition: .5s;
+}
+
+.card:hover img {
+     opacity: 0.4;
+     transition: .5s;
+ }
+
+.card:hover .card-image {
+    transition: all .9s;
+}
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    width: 100%;
+    height: 13%;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+}
+
+.social-icons li {
+    display: flex;
+    list-style: none;
+    width: 20%;
+    height: 105%;
+    margin: 0 2%;
+}
+
+.social-icons li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    background: #fff;
+    font-size: 23px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 6px;
+    transition: .4s;
+    transform: translateY(200px);
+    opacity: 0;
+}
+
+.card:hover .social-icons li a {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.card:hover li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+.card:hover li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+.card:hover li:nth-child(3) a {
+    transition-delay: 0.3s;
+}
+.card:hover li:nth-child(4) a {
+    transition-delay: 0.4s;
+}
+
+.details {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    background: #edf2fb;
+    opacity: 0;
+    width: 100%;
+    height: 25%;
+    z-index: 3;
+    padding: 0;
+    transition: .4s;
+}
+
+.details h2 {
+    font-size: 1.5vw;
+    font-family: 'open Sans', sans-serif;
+    color: #0353a4;
+    margin: 0;
+    padding: 4%;
+    text-align: center;
+}
+
+.details h2 .job-title {
+    font-size: 1.4vw;
+    line-height: 50%;
+    color: #0353a4;
+    font-weight: 300;
+}
+
+.card:hover .details{
+    bottom: 0;
+    left: 0;
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+.profilephoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
